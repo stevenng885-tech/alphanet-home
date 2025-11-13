@@ -3,8 +3,8 @@ import React from 'react'
 const Home = () => {
     return (
         <React.Fragment>
-            <section className='py-16 sm:py-20 bg-linear-to-br from-(--second) to-(--thirth)'>
-                <div className="text-center max-w-4xl mx-auto">
+            <section className='py-16 sm:py-20 bg-linear-to-br from-(--fourth) to-(--fiveth)'>
+                <div className="text-center max-w-4xl mx-auto py-40 sm:py-30 lg:py-20 xl:py-10">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
                         <span className="text-transparent bg-linear-to-r from-[#FF6F61] to-[#FF8E53] bg-clip-text">
                             Alpha Net
@@ -80,7 +80,7 @@ const Home = () => {
             <section className="py-16 sm:py-20 bg-white/50 backdrop-blur-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="bg-linear-to-br from-[#FF6F61] to-[#FF8E53] p-6 sm:p-8 rounded-2xl text-white shadow-lg">
+                        <div className="bg-linear-to-br from-(--fourth) to-(--fiveth) p-6 sm:p-8 rounded-2xl text-white shadow-lg">
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
                                 💼 Sứ Mệnh Của Chúng Tôi
                             </h2>
@@ -107,7 +107,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='py-16 sm:py-20 bg-linear-to-br from-(--second) to-(--thirth)'>
+            <section className='py-16 sm:py-20 bg-linear-to-br from-(--fourth) to-(--fiveth)'>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">
@@ -179,7 +179,7 @@ const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                         <div className="bg-linear-to-br from-gray-50 to-blue-50 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center mb-4 sm:mb-6">
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-[#FF6F61] to-[#FF8E53] rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
                                     🎓
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">
@@ -192,7 +192,7 @@ const Home = () => {
                         </div>
                         <div className="bg-linear-to-br from-gray-50 to-blue-50 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center mb-4 sm:mb-6">
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-[#FF6F61] to-[#FF8E53] rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
                                     ⚡
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">
@@ -205,7 +205,7 @@ const Home = () => {
                         </div>
                         <div className="bg-linear-to-br from-gray-50 to-blue-50 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center mb-4 sm:mb-6">
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-[#FF6F61] to-[#FF8E53] rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg">
                                     🏆
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">
@@ -220,7 +220,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='py-16 sm:py-20 bg-linear-to-br from-(--second) to-(--thirth)'>
+            <section className='py-16 sm:py-20 bg-linear-to-br from-(--fourth) to-(--fiveth)'>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="bg-linear-to-br from-gray-800 to-gray-900 p-6 sm:p-8 rounded-2xl text-white shadow-lg">

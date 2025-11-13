@@ -8,14 +8,6 @@ const menu = [
         href: "/about-us"
     },
     {
-        title: "Cộng Đồng",
-        href: "#"
-    },
-    {
-        title: "Tin Tức",
-        href: "#"
-    },
-    {
         title: "Liên Hệ",
         href: "/contact"
     },
@@ -32,17 +24,17 @@ const Navigation = () => {
         window.scroll(0, 0)
     }
     return (
-        <nav ref={navRef} className="fixed top-0 left-0 w-full z-50 text-white">
+        <nav ref={navRef} className="fixed top-0 left-0 w-full z-50 text-white bg-black">
             <button
                 onClick={handleRef}
-                className='fixed z-10 bg-yellow-400 rounded-full right-10 bottom-10 p-5 text-2xl'
+                className='fixed z-10 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-full right-10 bottom-10 p-5 text-2xl'
             >
                 <FaAngleUp />
             </button>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="shrink-0">
-                        <Link href="/" className="flex gap-5 items-center">
+                        <Link href="/" onClick={toggleMenu} className="flex gap-5 items-center">
                             <Image
                                 width={50}
                                 height={50}
@@ -70,7 +62,6 @@ const Navigation = () => {
                                 )
                             })
                         }
-
                     </div>
 
                     {/* Button Desktop */}
@@ -124,50 +115,29 @@ const Navigation = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-black border-t border-red-600 animate-slide-down">
-                    <div className="px-4 pt-3 pb-4 space-y-2">
-                        <a
+                <div className="md:hidden bg-black border-t border-red-600 animate-slide-down py-5">
+                    <div className="px-4 space-y-2 text-center">
+                        {
+                            menu.map((item, index) => {
+                                return (
+                                    <Link
+                                        key={item.href + index}
+                                        onClick={toggleMenu}
+                                        href={item.href}
+                                        className="block px-3 py-4 text-white rounded hover:bg-red-900 transition"
+                                    >
+                                        {item.title}
+                                    </Link>
+                                )
+                            })
+                        }
+                        <Link
                             onClick={toggleMenu}
-                            href="#solution"
-                            className="block px-3 py-2 text-white rounded hover:bg-red-900 transition"
-                        >
-                            Giải Pháp
-                        </a>
-                        <a
-                            onClick={toggleMenu}
-                            href="#content"
-                            className="block px-3 py-2 text-white rounded hover:bg-red-900 transition"
-                        >
-                            Nội Dung
-                        </a>
-                        <a
-                            onClick={toggleMenu}
-                            href="#instructor"
-                            className="block px-3 py-2 text-white rounded hover:bg-red-900 transition"
-                        >
-                            Cộng đồng
-                        </a>
-                        <a
-                            onClick={toggleMenu}
-                            href="#feedback"
-                            className="block px-3 py-2 text-white rounded hover:bg-red-900 transition"
-                        >
-                            Đánh Giá
-                        </a>
-                        <a
-                            onClick={toggleMenu}
-                            href="#contact"
-                            className="block px-3 py-2 text-white rounded hover:bg-red-900 transition"
-                        >
-                            Liên Hệ
-                        </a>
-                        <a
-                            onClick={toggleMenu}
-                            href="#register"
-                            className="block px-3 smoothly-scale py-2 bg-red-900/70 backdrop-blur-sm text-center text-white font-bold rounded-md hover:bg-red-700 transition"
+                            href="/#register"
+                            className="bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white px-7 py-3 rounded-md font-bold shadow-md  transition"
                         >
                             THAM GIA MIỄN PHÍ
-                        </a>
+                        </Link>
                     </div>
                 </div>
             )}

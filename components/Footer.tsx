@@ -6,6 +6,7 @@ import { SiZalo } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
 import { FaCheck } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
+import PrimaryButton from './button/PrimaryButton';
 
 
 const contacts = [
@@ -49,7 +50,7 @@ const Footer = () => {
                     <div className="lg:col-span-1">
                         <div className="flex items-center mb-6">
                             <Link className="flex items-center mr-3 hover:opacity-80 transition-opacity duration-300" href="/">
-                                <div className="w-12 h-12 bg-linear-to-br from-[#FF6F61] to-[#FF8E53] rounded-xl flex items-center justify-center">
+                                <div className="w-12 h-12 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-xl flex items-center justify-center">
                                     <Image
                                         alt="Logo"
                                         loading="lazy"
@@ -175,13 +176,9 @@ const Footer = () => {
                                     <CiMail />
                                 </div>
                             </div>
-                            <button className="w-full bg-linear-to-r from-[#FF6F61] via-[#FF8E53] to-[#FF6F61] hover:from-[#FF8E53] hover:via-[#FF6F61] hover:to-[#FF8E53] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg shadow-[#FF6F61]/20 relative overflow-hidden group">
-                                <span className="relative z-10 flex items-center justify-center">
-                                    ĐĂNG KÝ NGAY
-                                </span>
-                                <div className="absolute inset-0 bg-linear-to-r from-[#FF8E53] via-[#FF6F61] to-[#FF8E53] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                </div>
-                            </button>
+                            <PrimaryButton className="w-full text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg shadow-[#FF6F61]/20 relative overflow-hidden group">
+                                ĐĂNG KÝ NGAY
+                            </PrimaryButton>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
                             <FaCheck className='text-green-500 mr-2' />
@@ -199,7 +196,7 @@ const Footer = () => {
                                 HOTLINE
                             </h5>
                             <p className="text-gray-400">
-                                077.84.66662
+                                0772086666
                             </p>
                         </div>
                     </div>
@@ -236,13 +233,13 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">
                             © 2025 Alpha Net. All rights reserved. |
-                            <a href="#" className="hover:text-[#FF6F61] transition-colors duration-300 ml-1">
+                            <Link href="/disclaimer" className="hover:text-[#FF6F61] transition-colors duration-300 ml-1">
                                 Điều Khoản
-                            </a>
+                            </Link>
                             |
-                            <a href="#" className="hover:text-[#FF6F61] transition-colors duration-300 ml-1">
+                            <Link href="/privacy" className="hover:text-[#FF6F61] transition-colors duration-300 ml-1">
                                 Bảo Mật
-                            </a>
+                            </Link>
                         </p>
                         <p className="text-gray-400 text-sm mt-2 md:mt-0">
                             Made with

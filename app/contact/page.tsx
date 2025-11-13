@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <React.Fragment>
             <section className='py-16 sm:py-20 bg-linear-to-br from-(--second) to-(--thirth)'>
-                <div className="text-center max-w-4xl mx-auto">
+                <div className="text-center max-w-4xl mx-auto py-40 sm:py-30 lg:py-20 xl:py-10">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
                         <span className="text-transparent bg-linear-to-r from-[#FF6F61] to-[#FF8E53] bg-clip-text">
                             LIÊN HỆ
@@ -15,12 +15,13 @@ const Home = () => {
                         </span>
                     </h1>
                     <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
-                        🚀 <strong>Thỏ Trader</strong>
+                        🚀 <strong>Alpha Net </strong>
                         luôn sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ ngay để được
                         <strong className="text-[#FF6F61]">
                             tư vấn chuyên nghiệp
                         </strong> và
                         <strong className="text-green-600">
+                            {" "}
                             bắt đầu hành trình trading thành công
                         </strong>!
                     </p>
@@ -38,7 +39,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <a href="tel:0778466662" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                        <a href="tel:0772086666" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center">
                                 <div className="w-16 h-16 mx-auto mb-4 bg-linear-to-br from-[#FF6F61] to-[#FF8E53] rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                                     📞
@@ -47,7 +48,7 @@ const Home = () => {
                                     Điện Thoại
                                 </h3>
                                 <p className="text-[#FF6F61] font-semibold mb-2">
-                                    077.84.66662
+                                    0772086666
                                 </p>
                                 <p className="text-sm text-gray-600 leading-relaxed">
                                     Hỗ trợ 24/7, gọi ngay để được tư vấn
@@ -71,7 +72,7 @@ const Home = () => {
                             </div>
                         </a>
 
-                        <a href="t.me/@cryptoVn" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                        <a href="https://t.me/congdongalphanet" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center">
                                 <div className="w-16 h-16 mx-auto mb-4 bg-linear-to-br from-[#0088CC] to-[#00B4DB] rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                                     💬
@@ -80,7 +81,7 @@ const Home = () => {
                                     Telegram
                                 </h3>
                                 <p className="text-[#FF6F61] font-semibold mb-2">
-                                    @thotradercoin01
+                                    @congdongalphanet
                                 </p>
                                 <p className="text-sm text-gray-600 leading-relaxed">
                                     Kết nối trực tiếp với đội ngũ chuyên gia
@@ -88,16 +89,16 @@ const Home = () => {
                             </div>
                         </a>
 
-                        <a href="alphanet.vn" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                        <a href="https://www.facebook.com/profile.php?id=100079515246834" className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                             <div className="text-center">
                                 <div className="w-16 h-16 mx-auto mb-4 bg-linear-to-br from-[#667eea] to-[#764ba2] rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
                                     🌐
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
-                                    Website
+                                    Facebook
                                 </h3>
                                 <p className="text-[#FF6F61] font-semibold mb-2">
-                                    thotrader.vn
+                                    Cộng Đồng Alpha Net
                                 </p>
                                 <p className="text-sm text-gray-600 leading-relaxed">
                                     Truy cập để xem thêm thông tin

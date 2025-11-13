@@ -140,7 +140,7 @@ export default function Home() {
               </div>
             </div>
             <a href="#register">
-              <PrimaryButton className="text-2xl">
+              <PrimaryButton className="text-2xl px-8 py-4">
                 Tham gia Alpha Net
               </PrimaryButton>
             </a>
@@ -159,6 +159,21 @@ export default function Home() {
                 </p>
                 <p>Thành Viên</p>
               </div>
+
+              <div className="text-center w-fit">
+                <p className="text-4xl">
+                  <CountUp
+                    from={0}
+                    to={95}
+                    separator=","
+                    direction="up"
+                    duration={0.2}
+                    className="count-up-text"
+                  />
+                  %
+                </p>
+                <p>Độ Chính xác</p>
+              </div>
               <div className="text-center w-fit">
                 <p className="text-4xl">
                   <CountUp
@@ -172,20 +187,6 @@ export default function Home() {
                   +
                 </p>
                 <p>Bot Giao Dịch</p>
-              </div>
-              <div className="text-center w-fit">
-                <p className="text-4xl">
-                  <CountUp
-                    from={0}
-                    to={95}
-                    separator=","
-                    direction="up"
-                    duration={0.2}
-                    className="count-up-text"
-                  />
-                  %
-                </p>
-                <p>Dộ Chính xác</p>
               </div>
             </div>
           </div>
@@ -247,7 +248,7 @@ export default function Home() {
         </AnimatedContent>
       </section>
 
-      <section id="register" className="overflow-hidden py-20 bg-linear-to-br from-(--second) to-(--thirth)">
+      <section id="register" className="overflow-hidden py-20 bg-linear-to-br from-(--fourth) to-(--fiveth)">
         <AnimatedContent
           distance={100}
           direction="vertical"
