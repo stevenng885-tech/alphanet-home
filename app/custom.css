@@ -1,0 +1,15 @@
+.primary-button {
+    background-image: linear-gradient(to right, oklch(66.7% .295 322.15), oklch(60.6% .25 292.717));
+}
+
+.primary-button:hover {
+    opacity: 0.9;
+}
+
+.text-clip {
+    background: linear-gradient(to bottom right, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
