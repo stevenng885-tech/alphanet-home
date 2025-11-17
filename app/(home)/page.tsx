@@ -96,7 +96,7 @@ export default function Home() {
                 rootMargin="-100px"
               />
               <SplitText
-                text="Bí Quyết Làm Giàu Từ Crypto"
+                text="Bí Quyết Sống Sót Cùng Crypto"
                 className=" text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-white"
                 delay={100}
                 duration={0.7}
