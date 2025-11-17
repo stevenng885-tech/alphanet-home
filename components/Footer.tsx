@@ -104,34 +104,24 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-3">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
+                                <Link href="/" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
                                     Trang Chủ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" href="/gioi-thieu">
+                                <Link href="/about-us" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" >
                                     Giới Thiệu
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" href="/lien-he">
+                                <Link href="/indicators" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" >
+                                    Chỉ báo
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" >
                                     Liên Hệ
-                                </a>
-                            </li>
-                            <li>
-                                <a className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" href="/cctv">
-                                    CC TV
-                                </a>
-                            </li>
-                            <li>
-                                <a className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" href="/dich-vu">
-                                    Dịch Vụ
-                                </a>
-                            </li>
-                            <li>
-                                <a className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300" href="/bxh">
-                                    BXH
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -141,24 +131,24 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-3">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
+                                <Link href="/#register" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
                                     Thông Tin Thị Trường
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
+                                <Link href="/#register" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
                                     Phân Tích Kỹ Thuật
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
+                                <Link href="/#register" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
                                     Tín Hiệu Thị Trường
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
+                                <Link href="/#register" className="text-gray-400 hover:text-[#FF6F61] transition-colors duration-300">
                                     Tư Vấn 1:1
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
