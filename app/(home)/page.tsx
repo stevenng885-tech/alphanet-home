@@ -76,9 +76,7 @@ export default function Home() {
       <section className="w-full min-h-screen flex justify-center items-center overflow-hidden relative">
         <div className="absolute top-0 left-0 right-0 bottom-0  bg-black w-full min-h-screen">
           <Galaxy
-            mouseRepulsion={true}
-            mouseInteraction={true}
-            density={1.5}
+            density={0.5}
             glowIntensity={0.5}
             saturation={0.1}
             hueShift={240}

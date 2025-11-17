@@ -8,11 +8,13 @@ import { IoIosWarning } from 'react-icons/io';
 import PrimaryButton from '../button/PrimaryButton';
 import { FaUser, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaQuestion } from "react-icons/fa";
 
 type Inputs = {
     name: string
     email: string
     phone: string
+    source: string
     message: string
 }
 const rules = {
@@ -121,6 +123,20 @@ const ContactForm = () => {
                     <IoIosWarning /> {errors.email.message}
                 </div>
             }
+
+            <label htmlFor='source' className="hover:text-green-600 flex items-center text-xl gap-2 font-semibold text-gray-700 mb-2 group-focus-within:text-green-600 transition-colors duration-300">
+                <FaQuestion />
+                <span className='capitalize'>
+                    Bạn Biết Chúng Tôi qua đâu
+                </span>
+            </label>
+            <input
+                id="source"
+                {...register("source")}
+                type="text"
+                placeholder="Bạn Biết Chúng Tôi qua đâu (Có Thể Bỏ Trống)"
+                className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:bg-white focus:border-green-600 focus:ring-4 focus:ring-green-600/20 transition-all duration-300 text-gray-900 placeholder-gray-500 text-base outline-none"
+            />
             <div className='smoothly-scale'>
                 <PrimaryButton isLoading={isLoading} type='submit' className='w-full py-4'  >
                     Đăng ký tham gia ngay!

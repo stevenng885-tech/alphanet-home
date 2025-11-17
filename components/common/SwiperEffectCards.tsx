@@ -6,6 +6,18 @@ import PrimaryButton from '../button/PrimaryButton';
 
 const espertos = [
     {
+        avatar: "/assets/shared/avatar/ThinhPhat.webp",
+        name: "Thịnh Phát",
+        description: "Trader 8 year experience  - Forex / Crypto Coacher",
+        href: "https://zalo.me/0925887536"
+    },
+    {
+        avatar: "/assets/shared/avatar/mimi.webp",
+        name: "Mimi",
+        description: "Trader 5 year experience  - Crypto Coacher",
+        href: "https://zalo.me/0794229302"
+    },
+    {
         avatar: "/assets/shared/avatar/hieutrinh.webp",
         name: "Hiếu Trịnh",
         description: "Trader 6 year experience  - Forex / Crypto Coacher",
@@ -17,18 +29,20 @@ const espertos = [
         description: "Trader 5 year experience  - Crypto - Forex Coacher / Speaker",
         href: "https://zalo.me/0925887549"
     },
-    {
-        avatar: "/assets/shared/avatar/mimi.webp",
-        name: "Mimi",
-        description: "Trader 5 year experience  - Crypto Coacher",
-        href: "https://zalo.me/0794229302"
-    },
+
     {
         avatar: "/assets/shared/avatar/ThinhPhat.webp",
         name: "Thịnh Phát",
         description: "Trader 8 year experience  - Forex / Crypto Coacher",
         href: "https://zalo.me/0925887536"
     },
+    {
+        avatar: "/assets/shared/avatar/den.jpg",
+        name: "Thợ Trader",
+        description: "Trader 5 year experience  - Crypto Coacher / Speaker",
+        href: "https://zalo.me/0798378625"
+    },
+
 ]
 
 const SwiperEffectCards = () => {

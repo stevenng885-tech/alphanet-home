@@ -8,6 +8,14 @@ const menu = [
         href: "/about-us"
     },
     {
+        title: "Chỉ Báo",
+        href: "/indicators"
+    },
+    {
+        title: "Tin Tức",
+        href: "/news"
+    },
+    {
         title: "Liên Hệ",
         href: "/contact"
     },
