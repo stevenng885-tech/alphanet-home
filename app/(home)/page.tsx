@@ -75,12 +75,10 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="w-full min-h-screen flex justify-center items-center overflow-hidden relative">
         <div className="absolute top-0 left-0 right-0 bottom-0  bg-black w-full min-h-screen">
-          <Galaxy
-            density={0.5}
-            glowIntensity={0.5}
-            saturation={0.1}
-            hueShift={240}
-          />
+          <video autoPlay={true} muted id="myVideo" loop={true} className="min-w-screen max-w-none " >
+            <source src={`/assets/videos/video.mp4`} type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
         </div>
         <div className="container mx-auto flex flex-col py-40 sm:py-30 lg:py-20 xl:py-10 lg:grid grid-cols-3 gap-10 relative">
           <div className="flex flex-col gap-7 text-white col-span-2 text-center items-center lg:items-start lg:text-left">
