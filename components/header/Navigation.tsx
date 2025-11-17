@@ -32,7 +32,7 @@ const Navigation = () => {
         window.scroll(0, 0)
     }
     return (
-        <nav ref={navRef} className="fixed top-0 left-0 w-full z-50 text-white bg-black">
+        <nav ref={navRef} className="fixed top-0 left-0 w-full z-50 text-white bg-linear-to-r/decreasing from-indigo-500 to-teal-400">
             <button
                 onClick={handleRef}
                 className='fixed z-10 bg-linear-to-br from-(--fourth) to-(--fiveth) rounded-full right-10 bottom-10 p-5 text-2xl'
@@ -123,7 +123,7 @@ const Navigation = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-black border-t border-red-600 animate-slide-down py-5">
+                <div className="md:hidden bg-linear-to-r/decreasing from-indigo-500 to-teal-400 border-t border-red-600 animate-slide-down py-5">
                     <div className="px-4 space-y-2 text-center">
                         {
                             menu.map((item, index) => {
