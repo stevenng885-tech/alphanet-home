@@ -11,10 +11,10 @@ const menu = [
         title: "Chỉ Báo",
         href: "/indicators"
     },
-    {
-        title: "Tin Tức",
-        href: "/news"
-    },
+    // {
+    //     title: "Tin Tức",
+    //     href: "/news"
+    // },
     {
         title: "Liên Hệ",
         href: "/contact"

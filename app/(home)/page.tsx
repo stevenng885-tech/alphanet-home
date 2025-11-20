@@ -2,16 +2,19 @@
 import PrimaryButton from "@/components/button/PrimaryButton";
 import ContactForm from "@/components/common/ContactForm";
 import Image from "next/image";
+
 import { FaFacebookF, FaPhoneAlt, FaTelegramPlane, FaTiktok } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoStar } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+
 import SwiperEffectCards from "@/components/common/SwiperEffectCards";
 import SplitText from "@/components/animation/text/SplitText";
 import CountUp from "@/components/animation/text/Count";
 import AnimatedContent from "@/components/animation/common/AnimatedContent";
-import Galaxy from "@/components/animation/background/Galaxy";
+import React from "react";
 
 const contacts = [
   {
@@ -71,8 +74,38 @@ const feedbacks = [
 ]
 
 export default function Home() {
+
+  const [popup, setPopup] = React.useState(false)
+
+
+  React.useEffect(() => {
+    (async () => {
+      new Promise(async (rs) => {
+        await setTimeout(() => {
+          rs(setPopup(true))
+        }, 3000)
+      })
+    })()
+  }, [])
+
   return (
     <div className="flex flex-col">
+      {
+        popup &&
+        <div className="fixed flex justify-center items-center w-screen h-screen z-100 backdrop-blur-xs">
+          <div className="relative max-w-screen min-w-md border-4 p-5 rounded-4xl gap-5 flex flex-col bg-white">
+            <button className="absolute right-5 top-2 text-xl" onClick={() => setPopup(false)}>
+              <IoMdClose />
+            </button>
+            <h1 className="uppercase text-2xl font-bold text-center max-w-96 mx-auto p-5">
+              Để lại thông tin liên lạc để nhận được ưu đãi <span className="text-red-700">100 USDT</span> dành cho thành viên mới
+            </h1>
+            <div>
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      }
       <section className="w-full min-h-screen flex justify-center items-center overflow-hidden relative">
         <div className="absolute top-0 left-0 right-0 bottom-0  bg-black w-full min-h-screen">
           <video autoPlay={true} muted id="myVideo" loop={true} className="min-w-screen max-w-none " >
