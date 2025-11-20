@@ -4,6 +4,13 @@ import { Autoplay, EffectCards } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import PrimaryButton from '../button/PrimaryButton';
 
+type TypeEspertos = {
+    avatar: string
+    name: string
+    description: string
+    href: string
+}
+
 const espertos = [
     {
         avatar: "/assets/shared/avatar/ThinhPhat.webp",
@@ -29,13 +36,6 @@ const espertos = [
         description: "Trader 5 year experience  - Crypto - Forex Coacher / Speaker",
         href: "https://zalo.me/0925887549"
     },
-
-    {
-        avatar: "/assets/shared/avatar/ThinhPhat.webp",
-        name: "Thịnh Phát",
-        description: "Trader 8 year experience  - Forex / Crypto Coacher",
-        href: "https://zalo.me/0925887536"
-    },
     {
         avatar: "/assets/shared/avatar/den.jpg",
         name: "Thợ Trader",
@@ -44,8 +44,23 @@ const espertos = [
     },
 
 ]
+const shuffle = (array: Array<TypeEspertos>) => {
+    let currentIndex = array.length;
+    while (currentIndex != 0) {
+
+        const randomIndex = Math.floor(Math.random() * currentIndex);
+        console.log(randomIndex)
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+    return array
+
+}
 
 const SwiperEffectCards = () => {
+    const newArr = shuffle(espertos)
     return (
         <Swiper
             pagination={true}
@@ -60,7 +75,7 @@ const SwiperEffectCards = () => {
             }}
         >
             {
-                espertos.map((item, index) => {
+                newArr.map((item, index) => {
                     return (
                         <SwiperSlide key={item.name + index}>
                             <a href={item.href} target='_blank' className='bg-black backdrop-blur-md rounded-4xl flex flex-col gap-2 p-5 '>
